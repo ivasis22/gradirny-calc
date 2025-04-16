@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CalculationForm />} />
-          <Route path="/results-table" element={<ResultsTable />} />
+          <Route path="/gradirny-calc/results-table" element={<ResultsTable />} />
         </Routes>
       </BrowserRouter>
     </div>
