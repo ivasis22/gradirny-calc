@@ -7,10 +7,10 @@ import './App.css';
 function App() {
   return (
     <div className="vw-100 vh-100 bg-dark">
-      <BrowserRouter>
+      <BrowserRouter basename="/gradirny-calc">
         <Routes>
           <Route path="/" element={<CalculationForm />} />
-          <Route path="/gradirny-calc/results-table" element={<ResultsTable />} />
+          <Route path="/results-table" element={<ResultsTable />} />
         </Routes>
       </BrowserRouter>
     </div>
