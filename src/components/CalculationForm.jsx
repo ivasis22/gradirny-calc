@@ -56,7 +56,7 @@ export const CalculationForm = () => {
     validationSchema,
     onSubmit: (values) => {
       // +++ Используем новую функцию из утилит
-      const results = getCalculationResults(values);
+      const results = calculations.getCalculationResults(values);
       navigate('/results-table', { state: { results } });
     },
   });
