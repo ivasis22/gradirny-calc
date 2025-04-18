@@ -4,6 +4,11 @@ import { Section } from "./Section";
 export const CalculationIntermediateValuesSection = ({ formik, autoResults }) => (
     <Section title="Вычисление промежуточных величин">
       <ResultField
+        label="Производительность секции"
+        value={autoResults.gg}
+        unit="м³/ч"
+      />
+      <ResultField
         label="Плотность орошения (gₓ)"
         value={autoResults.gx}
         unit="м³/м²·ч"
